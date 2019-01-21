@@ -18,7 +18,7 @@ import java.util.Map;
 
 /**
  * Singleton - prepares available XML validators.<br/>
- * Basic configuration of every XML validator is parsed from 'validators.xml'
+ * Basic configuration of every XML validator is parsed from 'mei-validators.xml'
  * file - provided with this implementation.
  * 
  * @author mariuszs
@@ -43,7 +43,7 @@ public class XmlValidatorsProvider extends DefaultHandler {
 			XMLReader xmlReader = XMLReaderFactory.createXMLReader();
 			xmlReader.setContentHandler(this);
 			xmlReader.parse(new InputSource(this.getClass()
-					.getResourceAsStream("/validators.xml")));
+					.getResourceAsStream("/mei-validators.xml")));
 		} catch (Exception ex) {
 			logger.error(ex.getMessage(), ex);
 		}
@@ -69,17 +69,17 @@ public class XmlValidatorsProvider extends DefaultHandler {
 	@Override
 	public void startElement(String uri, String localName, String name,
 			Attributes attributes) throws SAXException {
-		try {
 
-			logger.info("startElement(uri: " + uri + ", localName: " + localName + ", name: " + name + ", attributes: " + attributes);
+		try {
 
 			if (localName.equals(T_VALIDATOR)) {
 				DataType cDataType = new DataType(attributes.getValue(A_FORMAT),
 						attributes.getValue(A_MIMETYPE));
+
 				XmlValidator validator = new RNGValidator(attributes.getValue(A_SCHEMA));
 
-				xmlValidators.put(cDataType, validator);			}
-
+				xmlValidators.put(cDataType, validator);
+			}
 		} catch (Exception ex) {
 			throw new SAXException("Configuration errors occured.");
 		}
