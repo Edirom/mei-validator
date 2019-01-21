@@ -71,6 +71,8 @@ public class XmlValidatorsProvider extends DefaultHandler {
 			Attributes attributes) throws SAXException {
 		try {
 
+			logger.info("startElement(uri: " + uri + ", localName: " + localName + ", name: " + name + ", attributes: " + attributes);
+
 			if (localName.equals(T_VALIDATOR)) {
 				DataType cDataType = new DataType(attributes.getValue(A_FORMAT),
 						attributes.getValue(A_MIMETYPE));
