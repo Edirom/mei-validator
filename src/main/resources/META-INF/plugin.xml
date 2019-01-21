@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 0.4" "http://jpf.sourceforge.net/plugin_0_7.dtd">
+<plugin id="mei-validator" version="0.1">
+    <requires>
+        <import plugin-id="pl.psnc.dl.ege.root"/>
+    </requires>
+    <extension plugin-id="pl.psnc.dl.ege.root" point-id="Validator" id="MEIValidator">
+        <parameter id="class" value="de.edirom.meigarage.MEIValidator"/>
+        <parameter id="name" value="MEI Validator" />
+        <parameter id="description" value="MEI default validator" />
+    </extension>
+</plugin>

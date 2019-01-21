@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<validators>
+	<validator format="MEI 4.0" mimeType="text/xml" rng="https://raw.githubusercontent.com/music-encoding/music-encoding/develop/schemata/mei-all.rng"/>
+</validators>
