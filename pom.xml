@@ -136,12 +136,12 @@
 		<repository>
 			<id>edirom</id>
 			<name>Edirom</name>
-			<url>https://github.com/Edirom</url>
+			<url>https://maven.pkg.github.com/Edirom/*</url>
 		</repository>
-                  <repository>
+                <repository>
 			<id>teic</id>
 			<name>TEIC</name>
-			<url>https://github.com/TEIC</url>
+			<url>https://maven.pkg.github.com/TEIC/*</url>
 		</repository>
 	</repositories>     
 </project>
