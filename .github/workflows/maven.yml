@@ -32,5 +32,5 @@ jobs:
     - name: Upload Maven build artifact
       uses: actions/upload-artifact@v2
       with:
-        name: mei-validator.jar
-        path: github-actions-java-maven/target/github-actions-java-maven.jar
+        name: mei-validator-0.1.jar
+        path: mei-validator/target/mei-validator-0.1.jar
