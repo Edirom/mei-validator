@@ -29,3 +29,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: mvn install:install-file -DgroupId=jpf-tools -DartifactId=jpf-tools -Dversion=1.5.1 -Dpackaging=jar -Dfile=lib/jpf-tools.jar &&  mvn -B package --file pom.xml
+    - name: Upload Maven build artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: mei-validator.jar
+        path: github-actions-java-maven/target/github-actions-java-maven.jar
