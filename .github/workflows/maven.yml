@@ -33,4 +33,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: mei-validator-0.1.jar
-        path: mei-validator/target/mei-validator-0.1.jar
+        path: /home/runner/work/mei-validator/mei-validator/target/mei-validator-0.1.jar
