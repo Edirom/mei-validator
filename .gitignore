@@ -1,6 +1,6 @@
 *
 !*/
-!jod-lib/*.jar
+!lib/*.jar
 !.gitignore
 !*.gitattributes
 !pom.xml
