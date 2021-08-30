@@ -118,7 +118,7 @@
         <dependency>
             <groupId>pl.psnc.dl.ege</groupId>
             <artifactId>ege-framework</artifactId>
-            <version>0.5</version>
+            <version>0.4</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
