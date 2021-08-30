@@ -143,5 +143,16 @@
 			<name>TEIC</name>
 			<url>https://maven.pkg.github.com/TEIC/*</url>
 		</repository>
+	          <repository>
+			<id>third-party-jars</id>
+			<releases>
+			  <enabled>false</enabled>
+			  <checksumPolicy>ignore</checksumPolicy>
+			</releases>
+			<snapshots>
+			  <enabled>true</enabled>
+			</snapshots>
+			<url>https://github.com/TEIC/ege-framework/tree/main/lib</url>
+		  </repository>
 	</repositories>     
 </project>
