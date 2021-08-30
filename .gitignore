@@ -1,6 +1,5 @@
 *
 !*/
-!jod-lib/*.jar
 !.gitignore
 !*.gitattributes
 !pom.xml
@@ -16,4 +15,5 @@
 !eadsgml.dcl
 !*.ent
 !*.xsd
+!*.yml
 
