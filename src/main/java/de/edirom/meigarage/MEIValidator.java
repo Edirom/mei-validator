@@ -1,12 +1,16 @@
 package de.edirom.meigarage;
 
+import de.edirom.meigarage.xml.XmlValidator;
 import org.apache.log4j.Logger;
+import org.jdom2.JDOMException;
+import org.xml.sax.SAXParseException;
 import pl.psnc.dl.ege.component.Validator;
 import pl.psnc.dl.ege.exception.EGEException;
 import pl.psnc.dl.ege.exception.ValidatorException;
 import pl.psnc.dl.ege.types.DataType;
 import pl.psnc.dl.ege.types.ValidationResult;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -38,7 +42,6 @@ public class MEIValidator implements Validator {
             throws IOException, ValidatorException, EGEException
     {
         checkIfSupported(inputDataType);
-        /*
         XmlValidator validator = (XmlValidator)provider.getValidator(inputDataType);
         try {
             StandardErrorHandler seh = new StandardErrorHandler();
@@ -66,9 +69,7 @@ public class MEIValidator implements Validator {
             ValidatorException ve = new ValidatorException(ex.getMessage());
             ve.setStackTrace(ex.getStackTrace());
             throw ve;
-        }*/
-
-        return null;
+        }
 
     }
 
