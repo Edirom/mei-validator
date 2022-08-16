@@ -2,7 +2,8 @@ package de.edirom.meigarage;
 
 import de.edirom.meigarage.xml.RNGValidator;
 import de.edirom.meigarage.xml.XmlValidator;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -25,7 +26,7 @@ import java.util.Map;
  */
 public class XmlValidatorsProvider extends DefaultHandler {
 
-	private static final Logger logger = Logger
+	private static final Logger logger = LogManager
 			.getLogger(XmlValidatorsProvider.class);
 
 	public static final String T_VALIDATOR = "validator";

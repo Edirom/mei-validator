@@ -1,7 +1,8 @@
 package de.edirom.meigarage;
 
 import de.edirom.meigarage.xml.XmlValidator;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.jdom2.JDOMException;
 import org.xml.sax.SAXParseException;
 import pl.psnc.dl.ege.component.Validator;
@@ -25,7 +26,7 @@ import java.util.List;
  */
 public class MEIValidator implements Validator {
 
-    private static final Logger LOGGER = Logger.getLogger(MEIValidator.class);
+    private static final Logger LOGGER = LogManager.getLogger(MEIValidator.class);
 
     private static final XmlValidatorsProvider provider = XmlValidatorsProvider
             .getInstance();

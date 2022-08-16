@@ -6,7 +6,7 @@
 
     <groupId>de.edirom.meigarage</groupId>
     <artifactId>mei-validator</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
 
     <name>MEI Validator</name>
     <properties>
@@ -111,14 +111,8 @@
         </dependency>
         <dependency>
             <groupId>pl.psnc.dl.ege</groupId>
-            <artifactId>ege-api</artifactId>
-            <version>0.4.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>pl.psnc.dl.ege</groupId>
             <artifactId>ege-framework</artifactId>
-            <version>0.5</version>
+            <version>0.5.1</version>
             <scope>compile</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.thaiopensource/jing -->
