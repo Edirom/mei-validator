@@ -1,23 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <validators>
-    <validator format="MEI 2.1.1" mimeType="text/xml"
+    <validator format="mei211" mimeType="text/xml" description="MEI 2.1.1"
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/2.1.1/mei-all.rng"/>
-    <validator format="MEI 3.0.0" mimeType="text/xml"
+    <validator format="mei300" mimeType="text/xml" description="MEI 3.0.0"
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/3.0.0/mei-all.rng"/>
-    <validator format="MEI 4.0.0" mimeType="text/xml"
+    <validator format="mei400" mimeType="text/xml" description="MEI 4.0.0"
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.0/mei-all.rng"/>
-    <validator format="MEI 4.0.1" mimeType="text/xml"
+    <validator format="mei401" mimeType="text/xml" description="MEI 4.0.1"
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.1/mei-all.rng"/>
-    <validator format="MEI dev" mimeType="text/xml"
+    <validator format="meidev" mimeType="text/xml" description="MEI dev"
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/dev/mei-all.rng"/>
-    <validator format="MEI 4.0.0" mimeType="text/xml"
-               rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.0/mei-all.rng"/>
-    <validator format="MEI 4.0.1 all any" mimeType="text/xml"
-               rng="https://raw.githubusercontent.com/music-encoding/schema/4.0.1/mei-all_anyStart.rng"/>
-    <validator format="MEI 4.0.1 cmn" mimeType="text/xml"
-               rng="https://raw.githubusercontent.com/music-encoding/schema/4.0.1/mei-CMN.rng"/>
-    <validator format="MEI 4.0.1 mensural" mimeType="text/xml"
-               rng="https://raw.githubusercontent.com/music-encoding/schema/4.0.1/mei-Mensural.rng "/>
-    <validator format="MEI 4.0.1 neumes" mimeType="text/xml"
-               rng="https://raw.githubusercontent.com/music-encoding/schema/4.0.1/mei-Neumes.rng"/>
+    <validator format="meidev-cmn" mimeType="text/xml" description="MEI dev CMN"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/dev/mei-CMN.rng"/>
+    <validator format="meidev-mensural" mimeType="text/xml" description="MEI dev Mensural"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/dev/mei-Mensural.rng"/>
+    <validator format="meidev-neumes" mimeType="text/xml" description="MEI dev Neumes"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/dev/mei-Neumes.rng"/>
+    <validator format="meidev-any" mimeType="text/xml" description="MEI dev All anyStart"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/dev/mei-all_anyStart.rng"/>
+    <validator format="meidev-basic" mimeType="text/xml" description="MEI dev basic"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/dev/mei-basic.rng"/>
+    <validator format="mei401-any" mimeType="text/xml" description="MEI 4.0.1 All anyStart"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.1/mei-all_anyStart.rng"/>
+    <validator format="mei401-cmn" mimeType="text/xml" description="MEI 4.0.1 CMN"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.1/mei-CMN.rng"/>
+    <validator format="mei401-mensural" mimeType="text/xml" description="MEI 4.0.1 Mensural"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.1/mei-Mensural.rng"/>
+    <validator format="mei401-neumes" mimeType="text/xml" description="MEI 4.0.1 Neumes"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.1/mei-Neumes.rng"/>
+    <validator format="mei400-any" mimeType="text/xml" description="MEI 4.0.0 All anyStart"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.0/mei-all_anyStart.rng"/>
+    <validator format="mei400-cmn" mimeType="text/xml" description="MEI 4.0.0 CMN"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.0/mei-CMN.rng"/>
+    <validator format="mei400-mensural" mimeType="text/xml" description="MEI 4.0.0 Mensural"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.0/mei-Mensural.rng"/>
+    <validator format="mei400-neumes" mimeType="text/xml" description="MEI 4.0.0 Neumes"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.0/mei-Neumes.rng"/>
+    <validator format="mei300-any" mimeType="text/xml" description="MEI 3.0.0 All anyStart"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/3.0.0/mei-all_anyStart.rng"/>
+    <validator format="mei300-cmn" mimeType="text/xml" description="MEI 3.0.0 CMN"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/3.0.0/mei-CMN.rng"/>
+    <validator format="mei300-mensural" mimeType="text/xml" description="MEI 3.0.0 Mensural"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/3.0.0/mei-Mensural.rng"/>
+    <validator format="mei300-neumes" mimeType="text/xml" description="MEI 3.0.0 Neumes"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/3.0.0/mei-Neumes.rng"/>
+    <validator format="mei211-any" mimeType="text/xml" description="MEI 2.1.1 All anyStart"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/2.1.1/mei-all_anyStart.rng"/>
+    <validator format="mei211-cmn" mimeType="text/xml" description="MEI 2.1.1 CMN"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/2.1.1/mei-CMN.rng"/>
+    <validator format="mei211-mensural" mimeType="text/xml" description="MEI 2.1.1 Mensural"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/2.1.1/mei-Mensural.rng"/>
+    <validator format="mei211-neumes" mimeType="text/xml" description="MEI 2.1.1 Neumes"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/2.1.1/mei-Neumes.rng"/>
 </validators>
