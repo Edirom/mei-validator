@@ -8,6 +8,8 @@
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.0/mei-all.rng"/>
     <validator format="mei401" mimeType="text/xml" description="MEI 4.0.1"
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/4.0.1/mei-all.rng"/>
+    <validator format="mei50" mimeType="text/xml" description="MEI 50"
+               rng="https://raw.githubusercontent.com/music-encoding/schema/main/5.0/mei-all.rng"/>
     <validator format="meidev" mimeType="text/xml" description="MEI dev"
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/dev/mei-all.rng"/>
     <validator format="meidev-cmn" mimeType="text/xml" description="MEI dev CMN"
@@ -52,4 +54,6 @@
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/2.1.1/mei-Mensural.rng"/>
     <validator format="mei211-neumes" mimeType="text/xml" description="MEI 2.1.1 Neumes"
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/2.1.1/mei-Neumes.rng"/>
+    <validator format="musicxml" mimeType="text/xml" description="MusicXML"
+               xsd="https://raw.githubusercontent.com/w3c/musicxml/gh-pages/schema/musicxml.xsd"/>
 </validators>
