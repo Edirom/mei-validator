@@ -36,6 +36,7 @@ public class MEIValidatorTest {
         //DataType outputType = new DataType("lilypond","text/x-lilypond");
         //System.out.println("##################" + new String(Files.readAllBytes(Paths.get("src/test/resources/test-input.mei.zip"))) + is.toString());
         String tempDir = "src/test/temp";
+        new File(tempDir).mkdir();
         ValidationResult result = validator.validate(is, inputType);
         PrintWriter out = new PrintWriter(tempDir + File.separator + "test-output.xml");
         String baseprefix = "https://meigarage.edirom.de/ege-webservice/";
