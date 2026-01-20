@@ -32,7 +32,7 @@ public class MEIValidatorTest {
     public void validate() throws IOException, EGEException {
         InputStream is = new FileInputStream("src/test/resources/test-input.mei");
         //OutputStream os = new FileOutputStream("src/test/resources/test-output.ly.zip");
-        DataType inputType = new DataType("mei401","text/xml");
+        DataType inputType = new DataType("mei51","text/xml");
         //DataType outputType = new DataType("lilypond","text/x-lilypond");
         //System.out.println("##################" + new String(Files.readAllBytes(Paths.get("src/test/resources/test-input.mei.zip"))) + is.toString());
         String tempDir = "src/test/temp";
