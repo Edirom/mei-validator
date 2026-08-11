@@ -58,4 +58,22 @@
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/2.1.1/mei-Neumes.rng"/>
     <validator format="musicxml" mimeType="text/xml" description="MusicXML"
                xsd="https://raw.githubusercontent.com/w3c/musicxml/gh-pages/schema/musicxml.xsd"/>
+    <validator format="lido-latest" mimeType="text/xml" description="LIDO latest"
+               xsd="https://www.lido-schema.org/schema/latest/lido.xsd"/>
+    <validator format="lido-11" mimeType="text/xml" description="LIDO 1.1"
+               xsd="https://www.lido-schema.org/schema/v1.1/lido-v1.1.xsd"/>
+    <validator format="lido-10" mimeType="text/xml" description="LIDO 1.0"
+               xsd="https://www.lido-schema.org/schema/v1.0/lido-v1.0.xsd"/>
+    <validator format="lido-eodem" mimeType="text/xml" description="EODEM (Exhibition Object Data Exchange Model)"
+               xsd="https://lido-schema.org/profiles/v1.1/lido-v1.1-profile-EODEM-v1.0.xsd"/>
+    <validator format="lido-painting" mimeType="text/xml" description="LIDO Handbook “Painting and Sculpture”"
+               xsd="https://lido-schema.org/profiles/v1.1/lido-v1.1-profile-paintingandsculpture-v1.0.xsd"/>
+    <validator format="lido-architecture" mimeType="text/xml" description="LIDO Handbook “Architecture and Other Immovable Works”"
+               xsd="https://lido-schema.org/profiles/v1.1/lido-v1.1-profile-architecture-v1.1.xsd"/>
+    <validator format="lido-architecture" mimeType="text/xml" description="LIDO Handbook “Architecture and Other Immovable Works”"
+               xsd="https://lido-schema.org/profiles/v1.1/lido-v1.1-profile-architecture-v1.1.xsd"/>
+    <validator format="lido-mrrmc" mimeType="text/xml" description="Minimum Record Recommendation for Museums and Collections v. 1.1"
+               xsd="https://www.digis-berlin.de/diliva/static/lido-v1.1-profile-minimumrecordrecommendation-v1.0.1.xsd"/>
+    <validator format="lido-finna" mimeType="text/xml" description="Finna LIDO Profile"
+               xsd="https://raw.githubusercontent.com/NatLibFi/finna-metadata-profiles/refs/heads/main/LIDO/v0.2/lido-v1.1-profile-FINNA-v0.2.xsd"/>
 </validators>
