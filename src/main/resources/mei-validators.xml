@@ -76,4 +76,6 @@
                xsd="https://www.digis-berlin.de/diliva/static/lido-v1.1-profile-minimumrecordrecommendation-v1.0.1.xsd"/>
     <validator format="lido-finna" mimeType="text/xml" description="Finna LIDO Profile"
                xsd="https://raw.githubusercontent.com/NatLibFi/finna-metadata-profiles/refs/heads/main/LIDO/v0.2/lido-v1.1-profile-FINNA-v0.2.xsd"/>
+    <validator format="mei-dc" mimeType="text/xml" description="MEI for DC conversion"
+               rng="https://raw.githubusercontent.com/Edirom/mei-metadata-toolkit/refs/heads/main/src/schema/mei-dc.rng"/>
 </validators>
