@@ -56,8 +56,9 @@
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/2.1.1/mei-Mensural.rng"/>
     <validator format="mei211-neumes" mimeType="text/xml" description="MEI 2.1.1 Neumes"
                rng="https://raw.githubusercontent.com/music-encoding/schema/main/2.1.1/mei-Neumes.rng"/>
+    <!-- these validator scripts are currently not available on their server
     <validator format="musicxml" mimeType="text/xml" description="MusicXML"
-               xsd="https://raw.githubusercontent.com/w3c/musicxml/gh-pages/schema/musicxml.xsd"/>
+               xsd="https://raw.githubusercontent.com/w3c/musicxml/gh-pages/schema/musicxml.xsd"/>-->
     <validator format="lido-latest" mimeType="text/xml" description="LIDO latest"
                xsd="https://www.lido-schema.org/schema/latest/lido.xsd"/>
     <validator format="lido-11" mimeType="text/xml" description="LIDO 1.1"

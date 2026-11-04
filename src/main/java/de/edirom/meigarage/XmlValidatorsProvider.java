@@ -1,6 +1,7 @@
 package de.edirom.meigarage;
 
 import de.edirom.meigarage.xml.RNGValidator;
+import de.edirom.meigarage.xml.XSDValidator;
 import de.edirom.meigarage.xml.XmlValidator;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -76,9 +77,14 @@ public class XmlValidatorsProvider extends DefaultHandler {
 			if (localName.equals(T_VALIDATOR)) {
 				DataType cDataType = new DataType(attributes.getValue(A_FORMAT),
 						attributes.getValue(A_MIMETYPE));
-
-				XmlValidator validator = new RNGValidator(attributes.getValue(A_SCHEMA));
-
+				XmlValidator validator = null;
+				if (attributes.getValue(A_SCHEMA) != null) {
+					validator = new RNGValidator(attributes.getValue(A_SCHEMA));
+				} else if (attributes.getValue("xsd") != null) {
+					validator = new XSDValidator(attributes.getValue("xsd"));
+				} else {
+					throw new SAXException("Configuration errors occured.");
+				}
 				xmlValidators.put(cDataType, validator);
 			}
 		} catch (Exception ex) {
